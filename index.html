@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en-US">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portafolio de estudiante con proyectos web y cursos completados." />
-  <meta name="author" content="Juan" />
-  <title>Portafolio de Juan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <meta name="author" content="Juan Pablo Cuiza Arce" />
+  <title>WDD231 Web Frontend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css" />
   <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
   <header>
-    <img src="images/logo.svg" alt="Logo del sitio" class="logo" width="1" height="1" />
+    <img src="images/logo.svg" alt="Site logo" class="logo" width="1" height="1" />
     <span class="site-name">Juan Pablo Cuiza Arce</span>
     <button id="menu" aria-label="menu"></button>
   </header>
@@ -40,15 +42,16 @@
       </section>
       <section class="photo">
         <h2>Student Photo</h2>
-        <img src="images/foto perfil.png" alt="Student photo" class="student-img" width="150"/>
+        <img src="images/photo.png" alt="Student photo" class="student-img" width="150" />
       </section>
     </div>
     <section class="courses">
       <h2>Web Certificate Courses</h2>
       <div class="controls">
-        <button onclick="filterCourses('ALL')">All Courses</button>
-        <button onclick="filterCourses('WDD')">WDD Courses</button>
-        <button onclick="filterCourses('CSE')">CSE Courses</button>
+        <button id="btnAll">All Courses</button>
+        <button id="btnWDD">WDD Courses</button>
+        <button id="btnCSE">CSE Courses</button>
+
       </div>
       <div id="courseContainer" class="course-grid"></div>
       <div id="creditTotal" class="credit-summary"></div>

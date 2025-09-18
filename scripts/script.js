@@ -86,6 +86,9 @@ const courses = [
     completed: false
   }
 ]
+
+
+
 function filterCourses(subject) {
   let filtered = subject === 'ALL'
     ? courses
@@ -118,5 +121,8 @@ function displayCredits(courseList) {
   document.getElementById('creditTotal').textContent = `Total Credits: ${total}`;
 }
 
-// Initial load
+document.getElementById('btnAll').addEventListener('click', () => filterCourses('ALL'));
+document.getElementById('btnWDD').addEventListener('click', () => filterCourses('WDD'));
+document.getElementById('btnCSE').addEventListener('click', () => filterCourses('CSE'));
+
 filterCourses('ALL');
