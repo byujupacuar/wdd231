@@ -74,6 +74,12 @@ nav a:hover {
  
 }
 
+.navigation li.active a {
+  color: gold;
+  border-bottom: 2px solid gold; 
+}
+
+
 /* Main */
 main {
   padding: 0;
