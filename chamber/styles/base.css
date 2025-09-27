@@ -119,7 +119,7 @@ header {
     grid-template-columns: 2fr 1fr 1fr;
     margin: 0;
     padding: 0.25rem;
-
+  }
     &>* {
       margin: 0 1rem;
     }
@@ -135,7 +135,7 @@ header {
     &:nth-child(even) {
       background-color: #bbb;
     }
-  }
+  
 }
 
 .member-card {
