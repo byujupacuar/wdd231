@@ -1,0 +1,65 @@
+[
+  {
+    "name": "BlueWave Technologies",
+    "address": "123 Ocean Ave, La Paz",
+    "phone": "(591) 222-1234",
+    "website": "https://bluewave.bo",
+    "image": "bluesky.svg",
+    "membership": 3,
+    "description": "Innovación digital para empresas bolivianas."
+  },
+  {
+    "name": "EcoVida Market",
+    "address": "456 Green St, La Paz",
+    "phone": "(591) 222-5678",
+    "website": "https://ecovida.bo",
+    "image": "leaf.svg",
+    "membership": 2,
+    "description": "Productos orgánicos y sostenibles."
+  },
+  {
+    "name": "Altiplano Adventures",
+    "address": "789 Andes Rd, La Paz",
+    "phone": "(591) 222-9012",
+    "website": "https://altiplano.bo",
+    "image": "plane.svg",
+    "membership": 1,
+    "description": "Turismo ecológico y cultural."
+  },
+  {
+    "name": "Bella Estética",
+    "address": "321 Belleza Blvd, La Paz",
+    "phone": "(591) 222-3456",
+    "website": "https://bellaestetica.bo",
+    "image": "woman.svg",
+    "membership": 3,
+    "description": "Academia y servicios de belleza profesional."
+  },
+  {
+    "name": "Soluciones Financieras",
+    "address": "654 Capital Way, La Paz",
+    "phone": "(591) 222-7890",
+    "website": "https://solfin.bo",
+    "image": "piggy.svg",
+    "membership": 2,
+    "description": "Consultoría y gestión financiera."
+  },
+  {
+    "name": "Café Andino",
+    "address": "987 Aroma St, La Paz",
+    "phone": "(591) 222-4321",
+    "website": "https://cafeandino.bo",
+    "image": "cup.svg",
+    "membership": 1,
+    "description": "Café artesanal de altura."
+  },
+  {
+    "name": "Red Educativa",
+    "address": "159 Saber Ave, La Paz",
+    "phone": "(591) 222-6543",
+    "website": "https://rede.bo",
+    "image": "pencil.svg",
+    "membership": 2,
+    "description": "Plataforma de educación virtual."
+  }
+]
