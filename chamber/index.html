@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory Page</title>
+    <meta name="description" content="WDD231 - Chamber of Commerce Page.">
+    <meta name="author" content="Juan Pablo Cuiza Arce">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/script.js" defer></script>
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce - La Paz" />
+    <meta property="og:description"
+        content="We connect businesses, drive economic growth, and strengthen the entrepreneurial community of La Paz." />
+    <meta property="og:image" content="https://byujupacuar.github.io/wdd231/chamber/images/favicon.ico" />
+    <meta property="og:url" content="https://byujupacuar.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_BO" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">Timbuktu Chamber</div>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to La Paz Chamber</h1>
+            <button class="cta">Join Us</button>
+        </section>
+
+        <section class="weather">
+            <section class="event">
+                <div class="current-event">
+                    <h2>Event</h2>
+                </div>
+
+            </section>
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <ul>
+              
+                </ul>
+            </div>
+            <div class="forecast">
+                <h2>Forecast</h2>
+                <ul></ul>
+            </div>
+        </section>
+
+        <div class="toggle-buttons">
+            <button id="gridViewBtn">Grid View</button>
+            <button id="listViewBtn">List View</button>
+        </div>
+        <div id="membersContainer" class="grid-view">
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>📍 pja Juan Capriles, Villa San Antonio, 30, La Paz, Bolivia</p>
+                <p>📞 (223) 555-2300</p>
+                <p>✉️ info@lapazcitychamber.com</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Redes Sociales</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+                    <a href="#"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+                    <a href="#"><img src="images/twitterx.svg" alt="Twitter" /></a>
+
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <small>WDD 231 Class Project · Juan Pablo Cuiza Arce</small><br>
+                <small id="lastModified"></small>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

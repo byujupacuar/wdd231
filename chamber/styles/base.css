@@ -122,7 +122,7 @@ header {
   padding: 0.25rem;
 }
 
-.list-view > * {
+.list-view>* {
   margin: 0 1rem;
 }
 
@@ -138,6 +138,21 @@ header {
   background-color: #bbb;
 }
 
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+  /* Cambia esta URL por la tuya */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
 .member-card {
   border: 1px solid #ccc;
   padding: 1rem;
@@ -150,7 +165,21 @@ header {
   height: auto;
   border-radius: 4px;
 }
+.spotlight-card {
+  border: 2px solid gold;
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  color: #f0f0f0;
+  transition: transform 0.3s ease;
+}
 
+.spotlight-card:hover {
+  transform: scale(1.03);
+}
+
+.spotlight-card h3 {
+  color: gold;
+}
 
 /* Footer */
 footer {
@@ -165,6 +194,7 @@ footer {
   color: #60a5fa;
   text-decoration: none;
 }
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -182,10 +212,11 @@ footer {
 .footer-column h4 {
   margin-bottom: 0.5rem;
 }
+
 .social-icons {
-  display: flex;              
-  justify-content: center;    
-  gap: 1rem;                  
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
