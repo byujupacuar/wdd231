@@ -58,6 +58,9 @@ header {
 }
 
 /* Hero section */
+h1 {
+  color: #0a1f44;
+}
 .hero {
   background: #1e3a8a;
   color: #ffffff;
@@ -139,8 +142,8 @@ header {
 }
 
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
-  /* Cambia esta URL por la tuya */
+  background-image: url('/chamber/images/heroimg.webp');
+ 
   background-size: cover;
   background-position: center;
   height: 100vh;
