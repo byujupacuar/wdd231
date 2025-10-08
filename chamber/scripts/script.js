@@ -3,15 +3,17 @@ const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = `Last modification: ${lastModified}`;
 
 
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav-bar');
-toggle.addEventListener('click', () => {
-  nav.classList.toggle('open');
+const menuButton = document.getElementById('menu');
+const navigation = document.querySelector('.navigation');
+
+menuButton.addEventListener('click', () => {
+  navigation.classList.toggle('open');
+  menuButton.classList.toggle('open');
 });
 
-const apiKey = '8bf26a75f26df8b69bc7620880c9057a'; // Reemplaza con tu clave de OpenWeatherMap
-const lat = -16.5; // Latitud de La Paz
-const lon = -68.15; // Longitud de La Paz
+const apiKey = '8bf26a75f26df8b69bc7620880c9057a'; 
+const lat = -16.5;
+const lon = -68.15; 
 const units = 'imperial'; // Para Fahrenheit. Usa 'metric' para Celsius
 
 async function fetchWeather() {
@@ -54,10 +56,6 @@ async function fetchWeather() {
 }
 
 fetchWeather();
-
-
-
-
 
 async function fetchMembers() {
   try {

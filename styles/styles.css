@@ -235,9 +235,9 @@ footer {
 	}
 .profile-row {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Ajusta proporciones: texto más ancho que la foto */
-  gap: 2rem;                      /* Espacio entre columnas */
-  align-items: start;            /* Alineación vertical */
+  grid-template-columns: 2fr 1fr; 
+  gap: 2rem;                      
+  align-items: start;           
   margin: 2rem 0;
 }
 
