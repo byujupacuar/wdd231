@@ -10,10 +10,25 @@ menuButton.addEventListener('click', () => {
   navigation.classList.toggle('open');
   menuButton.classList.toggle('open');
 });
+const currentPage = window.location.pathname.split("/").pop();
 
-const apiKey = '8bf26a75f26df8b69bc7620880c9057a'; 
+// Selecciona todos los enlaces de navegación
+const navLinks = document.querySelectorAll(".navigation li a");
+
+navLinks.forEach(link => {
+  const linkPage = link.getAttribute("href");
+
+  // Compara y aplica la clase 'active' al <li> correspondiente
+  if (linkPage === currentPage) {
+    link.parentElement.classList.add("active");
+  } else {
+    link.parentElement.classList.remove("active");
+  }
+});
+
+const apiKey = '8bf26a75f26df8b69bc7620880c9057a';
 const lat = -16.5;
-const lon = -68.15; 
+const lon = -68.15;
 const units = 'imperial'; // Para Fahrenheit. Usa 'metric' para Celsius
 
 async function fetchWeather() {

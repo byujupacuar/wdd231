@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/confirmation.js" defer></script>
+
     <!-- Facebook Open Graph Meta Tags -->
     <meta property="og:title" content="Chamber of Commerce - La Paz" />
     <meta property="og:description"
@@ -32,55 +33,22 @@
         <button id="menu" aria-label="Menu"></button>
         <nav>
             <ul class="navigation">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <picture>
-                <source srcset="images/heroimage.webp" media="(min-width: 550px)">
-                <img src="images/heroimg.webp" alt="Temple name and location">
-            </picture>
-
-            <div class="hero-content">
-                <h1>Welcome to La Paz Chamber</h1>
-                <a href="join.html" class="cta">Join Us</a>
-
-            </div>
-
+        <section class="confirmation">
+            <h2>Información recibida:</h2>
+            <ul>
+               
+            </ul>
         </section>
 
-        <section class="weather">
-            <section class="event">
-                <div class="current-event">
-                    <h2>Event</h2>
-                </div>
-
-            </section>
-            <div class="current-weather">
-                <h2>Current Weather</h2>
-                <ul>
-
-                </ul>
-            </div>
-            <div class="forecast">
-                <h2>Forecast</h2>
-                <ul></ul>
-            </div>
-        </section>
-
-        <div class="toggle-buttons">
-            <button id="gridViewBtn">Grid View</button>
-            <button id="listViewBtn">List View</button>
-        </div>
-        <div id="membersContainer" class="grid-view">
-
-        </div>
 
     </main>
 

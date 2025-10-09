@@ -1,0 +1,458 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  background: #222;
+  color: white;
+  padding: 1rem;
+}
+main{
+  display: block;
+}
+
+.logo {
+  width: 32px;
+  height: auto;
+}
+
+#titmenu {
+  font-size: 1.5rem;
+  margin: 0;
+  flex-grow: 1;
+  padding-left: 1rem;
+}
+
+#menu {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "\2630"; /* Hamburger icon */
+}
+
+#menu.open::before {
+  content: "\00D7"; /* Close icon */
+}
+
+nav {
+  background-color: #36454f;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  background: #222;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+.navigation li {
+  border-top: 1px solid #444;
+}
+
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navigation li a:hover {
+  background: #444;
+}
+
+.navigation li.active a {
+  color: gold;
+  border-bottom: 2px solid gold;
+}
+
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  
+}
+
+/* Layout general */
+.form-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* Formulario */
+.membership-form {
+  flex: 1 1 400px;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.membership-form label {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.membership-form input,
+.membership-form select,
+.membership-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.membership-form input[type="submit"] {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.membership-form input[type="submit"]:hover {
+  background-color: #005599;
+}
+
+/* Tarjetas de membresía */
+.membership-cards {
+  flex: 1 1 300px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  animation: fadeInCards 1.5s ease-in-out;
+  margin: 2rem;
+}
+.membership-cards button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.card {
+  background: white;
+  border-left: 6px solid #003366;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  height: 120px;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #003366;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.confirmation {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeInConfirm 1s ease-in-out;
+}
+
+.confirmation h2 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.confirmation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.confirmation li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.confirmation strong {
+  color: #005599;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+/* Animación de entrada */
+@keyframes fadeInConfirm {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .confirmation {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .confirmation h2 {
+    font-size: 1.5rem;
+  }
+
+  .confirmation li {
+    font-size: 1rem;
+  }
+}
+
+
+/* Animación inicial */
+@keyframes fadeInCards {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modales */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-content h4 {
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.modal-content button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-layout {
+    flex-direction: column;
+  }
+
+  .membership-cards {
+    grid-template-columns: 1fr;
+  }
+main{
+  display: block;
+}
+  nav {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.toggle-buttons button {
+  padding: 0.75rem 1.5rem;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.toggle-buttons button:hover {
+  background: gold;
+  color: #222;
+}
+
+footer {
+  background: #0a1f44;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #eee;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  margin-bottom: 0.5rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.weather {
+    grid-template-columns: 1fr;
+     gap: 1rem;
+  margin: 2rem 1rem;
+
+  }
+
+
+.social-icons a {
+  display: flex;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+}
+
+.social-icons a:hover {
+  color: gold;
+}
+
+#lastModified {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 550px) {
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navigation li {
+    border: none;
+  }
+
+  .navigation li a {
+    padding: 1rem;
+  }
+   .weather {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  gap: 1rem;
+  margin: 2rem 1rem;
+}
+
+  .member-card img {
+    max-width: 100%;
+  }
+
+  .toggle-buttons {
+    flex-direction: column;
+  }
+  main{
+  display: flex;
+}
+}

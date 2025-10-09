@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory Page</title>
+    <meta name="description" content="WDD231 - Chamber of Commerce Page.">
+    <meta name="author" content="Juan Pablo Cuiza Arce">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/formtimestamp.js" defer></script>
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce - La Paz" />
+    <meta property="og:description"
+        content="We connect businesses, drive economic growth, and strengthen the entrepreneurial community of La Paz." />
+    <meta property="og:image" content="https://byujupacuar.github.io/wdd231/chamber/images/favicon.ico" />
+    <meta property="og:url" content="https://byujupacuar.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_BO" />
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site logo" class="logo" width="1" height="1" />
+        <h1 id="titmenu">La Paz Chamber</h1>
+        <button id="menu" aria-label="Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="get" action="thankyou.html" class="membership-form">
+            <label>
+                Nombre:
+                <input type="text" name="firstName" required title="Nombre del solicitante" autocomplete="given-name" />
+            </label>
+
+            <label>
+                Apellido:
+                <input type="text" name="lastName" required title="Apellido del solicitante"
+                    autocomplete="family-name" />
+            </label>
+
+            <label>
+                Cargo en la organización:
+                <input type="text" name="orgTitle" title="Cargo del solicitante" autocomplete="organization-title"
+                    pattern="[A-Za-z\s\-]{7,}" />
+            </label>
+
+            <label>
+                Correo electrónico:
+                <input type="email" name="email" required title="Correo electrónico del solicitante"
+                    autocomplete="email" placeholder="ejemplo@empresa.com" />
+            </label>
+
+            <label>
+                Teléfono móvil:
+                <input type="tel" name="mobile" required title="Número de teléfono móvil" autocomplete="tel" />
+            </label>
+
+            <label>
+                Nombre de la organización:
+                <input type="text" name="organization" required title="Nombre de la empresa u organización"
+                    autocomplete="organization" />
+            </label>
+
+            <label>
+                Nivel de membresía:
+                <select name="membershipLevel" title="Selecciona el nivel de membresía">
+                    <option value="NP">NP Membership (sin costo)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label>
+                Descripción de la organización:
+                <textarea name="description" title="Descripción de la empresa u organización"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp" />
+
+            <input type="submit" value="Enviar solicitud de membresía" />
+        </form>
+
+        <section class="membership-cards">
+            <div class="card np-card">
+                <h3>NP Membership</h3>
+                <button onclick="document.getElementById('modal-np').style.display='flex'">Ver beneficios</button>
+            </div>
+            <div class="card bronze-card">
+                <h3>Bronze Membership</h3>
+                <button onclick="document.getElementById('modal-bronze').style.display='flex'">Ver beneficios</button>
+                
+            </div>
+            <div class="card silver-card">
+                <h3>Silver Membership</h3>
+                <button onclick="document.getElementById('modal-silver').style.display='flex'">Ver beneficios</button>
+            </div>
+            <div class="card gold-card">
+                <h3>Gold Membership</h3>
+                <button onclick="document.getElementById('modal-gold').style.display='flex'">Ver beneficios</button>
+            </div>
+        </section>
+
+        <!-- Modales -->
+        <div id="modal-np" class="modal">
+            <div class="modal-content">
+                <h4>NP Membership</h4>
+                <p>Acceso a eventos gratuitos, red de contactos sin costo.</p>
+                <button onclick="document.getElementById('modal-np').style.display='none'">Cerrar</button>
+            </div>
+        </div>
+
+        <div id="modal-bronze" class="modal">
+            <div class="modal-content">
+                <h4>Bronze Membership</h4>
+                <p>Eventos, descuentos y promoción básica.</p>
+                <button onclick="document.getElementById('modal-bronze').style.display='none'">Cerrar</button>
+            </div>
+        </div>
+
+        <div id="modal-silver" class="modal">
+            <div class="modal-content">
+                <h4>Silver Membership</h4>
+                <p>Entrenamientos, eventos premium, publicidad destacada.</p>
+                <button onclick="document.getElementById('modal-silver').style.display='none'">Cerrar</button>
+            </div>
+        </div>
+
+        <div id="modal-gold" class="modal">
+            <div class="modal-content">
+                <h4>Gold Membership</h4>
+                <p>Todos los beneficios anteriores + posición destacada en la página principal.</p>
+                <button onclick="document.getElementById('modal-gold').style.display='none'">Cerrar</button>
+            </div>
+        </div>
+    </main>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>📍 pja Juan Capriles, Villa San Antonio, 30, La Paz, Bolivia</p>
+                <p>📞 (223) 555-2300</p>
+                <p>✉️ info@lapazcitychamber.com</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Redes Sociales</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+                    <a href="#"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+                    <a href="#"><img src="images/twitterx.svg" alt="Twitter" /></a>
+
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <small>WDD 231 Class Project · Juan Pablo Cuiza Arce</small><br>
+                <small id="lastModified"></small>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
