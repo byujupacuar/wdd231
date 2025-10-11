@@ -26,6 +26,58 @@ navLinks.forEach(link => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  // 🕒 Mensaje de visita
+  const messageArea = document.getElementById("visit-message");
+  const lastVisit = localStorage.getItem("lastVisit");
+  const now = Date.now();
+
+  if (!lastVisit) {
+    messageArea.textContent = "Welcome! Let us know if you have any questions.";
+  } else {
+    const days = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
+    if (days < 1) {
+      messageArea.textContent = "Back so soon! Awesome!";
+    } else {
+      messageArea.textContent = `You last visited ${days} day${days === 1 ? "" : "s"} ago.`;
+    }
+  }
+
+  localStorage.setItem("lastVisit", now);
+
+  // 🧩 Carga de tarjetas desde discover.json
+  const container = document.querySelector(".cards");
+
+  fetch("data/discover.json")
+    .then(response => {
+      if (!response.ok) throw new Error("Error loading JSON");
+      return response.json();
+    })
+    .then(data => {
+      data.forEach((item, index) => {
+        const card = document.createElement("section");
+        card.className = "card";
+        card.style.gridArea = `card${index + 1}`;
+
+        card.innerHTML = `
+          <h2>${item.name}</h2>
+          <figure>
+            <img src="${item.image}" alt="${item.name}">
+          </figure>
+          <address>${item.address}</address>
+          <p>${item.description}</p>
+          <button>Learn More</button>
+        `;
+
+        container.appendChild(card);
+      });
+    })
+    .catch(error => {
+      console.error("Failed to load discover.json:", error);
+      container.innerHTML = "<p>Sorry, we couldn't load the content.</p>";
+    });
+});
+
 const apiKey = '8bf26a75f26df8b69bc7620880c9057a';
 const lat = -16.5;
 const lon = -68.15;

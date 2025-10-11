@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Valle de la Luna",
+    "address": "Mallasa, La Paz, Bolivia",
+    "description": "A stunning landscape of eroded clay formations resembling a lunar surface.",
+    "image": "images/luna.webp"
+  },
+  {
+    "name": "Teleférico Mi Teleférico",
+    "address": "Estación Central, La Paz, Bolivia",
+    "description": "An aerial cable car system offering breathtaking views of the city and mountains.",
+    "image": "images/teleferico.webp"
+  },
+  {
+    "name": "Museo de la Coca",
+    "address": "Calle Linares 719, La Paz, Bolivia",
+    "description": "A cultural museum exploring the history and significance of the coca leaf in Andean society.",
+    "image": "images/coca.webp"
+  },
+  {
+    "name": "Plaza Murillo",
+    "address": "Centro Histórico, La Paz, Bolivia",
+    "description": "The historic heart of La Paz, surrounded by government buildings and colonial architecture.",
+    "image": "images/murillo.webp"
+  },
+  {
+    "name": "Iglesia de San Francisco",
+    "address": "Av. Mariscal Santa Cruz, La Paz, Bolivia",
+    "description": "A majestic 18th-century church known for its baroque architecture and rich history.",
+    "image": "images/sanfran.webp"
+  },
+  {
+    "name": "Mercado de las Brujas",
+    "address": "Calle Melchor Jiménez, La Paz, Bolivia",
+    "description": "A mystical market offering traditional remedies, amulets, and spiritual items.",
+    "image": "images/brujas.webp"
+  },
+  {
+    "name": "Mirador Killi Killi",
+    "address": "Villa Pabón, La Paz, Bolivia",
+    "description": "A scenic viewpoint offering panoramic vistas of La Paz and its dramatic skyline.",
+    "image": "images/killi.webp"
+  },
+  {
+    "name": "Parque Urbano Central",
+    "address": "Av. del Ejército, La Paz, Bolivia",
+    "description": "A spacious urban park ideal for walking, relaxing, and enjoying nature in the city.",
+    "image": "images/puc.webp"
+  }
+]
