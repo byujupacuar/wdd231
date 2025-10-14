@@ -198,6 +198,9 @@ body {
 .card:hover {
   transform: translateY(-5px);
 }
+@media (hover: hover) and (pointer: fine) {
+
+}
 
 .confirmation {
   background-color: #ffffff;
@@ -463,7 +466,7 @@ footer {
 }
 
 /* Responsive for larger screens */
-@media (min-width: 550px) {
+@media (min-width: 641px) {
   #menu {
     display: none;
   }
@@ -495,4 +498,15 @@ footer {
   main{
   display: flex;
 }
+  .card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+     transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+
+  }
 }
