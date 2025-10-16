@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <script src="scripts/script.js" defer></script>
+  <script src="scripts/appoints.js" defer></script>
   <link rel="icon" href="images/favicon.ico">
   <!-- Facebook Open Graph Meta Tags -->
   <meta property="og:title" content="Chamber of Commerce - La Paz" />
@@ -36,11 +37,11 @@
     </div>
     <nav>
       <ul class="navigation">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Appointment</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="galery.html">Gallery</a></li>
+        <li><a href="appoint.html">Appointment</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
 
       </ul>
     </nav>
@@ -48,7 +49,37 @@
 
 
   <main>
-    
+    <h2>Reservar Cita</h2>
+  <form id="appointmentForm">
+    <label for="name">Nombre</label>
+    <input type="text" id="name" required />
+
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" required />
+
+    <label for="date">Fecha</label>
+    <input type="date" id="date" required />
+
+    <label for="time">Hora</label>
+    <input type="time" id="time" required />
+
+    <label for="service">Servicio</label>
+    <select id="service" required>
+      <option value="">Selecciona uno</option>
+      <option value="Maquillaje profesional">Maquillaje profesional</option>
+      <option value="Peinado">Peinado</option>
+      <option value="Tratamiento facial">Tratamiento facial</option>
+    </select>
+
+    <button type="submit">Reservar en Google Calendar</button>
+  </form>
+<script src="https://apis.google.com/js/api.js"></script>
+
+
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/jupacuar/citas" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
   </main>
 
 

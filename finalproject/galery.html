@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <script src="scripts/script.js" defer></script>
+  <script src="scripts/galery.js" defer></script>
   <link rel="icon" href="images/favicon.ico">
   <!-- Facebook Open Graph Meta Tags -->
   <meta property="og:title" content="Chamber of Commerce - La Paz" />
@@ -36,19 +37,26 @@
     </div>
     <nav>
       <ul class="navigation">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Appointment</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="galery.html">Gallery</a></li>
+        <li><a href="appoint.html">Appointment</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
 
       </ul>
     </nav>
+    
   </header>
 
 
+
   <main>
-    
+    <h1>Galería de Servicios</h1>
+    <select id="serviceFilter">
+      <option value="all">Todos los servicios</option>
+    </select>
+     <main id="galleryContainer" class="gallery"></main>
+
   </main>
 
 
@@ -69,6 +77,7 @@
       <div class="footer-column">
         <h4>Last Updated</h4>
         <span id="lastUpdated"></span>
+        <a href="//www.loom.com/share/d107fc47581442fa81fb31ea51fc9a9d?sid=f9619815-735f-4b6e-9dca-cf70269cc41d">explain video gallery</a>
       </div>
     </div>
   </footer>

@@ -48,7 +48,15 @@
 
 
   <main>
-    
+      <div class="card">
+    <h2>¡Gracias por contactarnos!</h2>
+    <p><strong>Nombre:</strong> <span id="name"></span></p>
+    <p><strong>Correo:</strong> <span id="email"></span></p>
+    <p><strong>Mensaje:</strong></p>
+    <p id="message"></p>
+  </div>
+
+
   </main>
 
 
@@ -72,6 +80,12 @@
       </div>
     </div>
   </footer>
+    <script>
+    document.getElementById("name").textContent = localStorage.getItem("contactName");
+    document.getElementById("email").textContent = localStorage.getItem("contactEmail");
+    document.getElementById("message").textContent = localStorage.getItem("contactMessage");
+  </script>
+
 </body>
 
 </html>

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "svc01",
+    "name": "Corte de cabello",
+    "description": "Corte profesional para dama, caballero o niños.",
+    "price": "Bs 50",
+    "image": "images/cortes.webp"
+  },
+  {
+    "id": "svc02",
+    "name": "Coloración",
+    "description": "Aplicación de tintes permanentes o semi-permanentes.",
+    "price": "Bs 120",
+    "image": "images/tinte.webp"
+  },
+  {
+    "id": "svc03",
+    "name": "Peinado para eventos",
+    "description": "Peinados elegantes para bodas, graduaciones y fiestas.",
+    "price": "Bs 80",
+    "image": "images/peinado.webp"
+  },
+  {
+    "id": "svc04",
+    "name": "Manicure",
+    "description": "Cuidado de uñas con esmaltado tradicional o semipermanente.",
+    "price": "Bs 40",
+    "image": "images/unas.webp"
+  },
+  {
+    "id": "svc05",
+    "name": "Pedicure",
+    "description": "Tratamiento completo para pies con exfoliación y esmaltado.",
+    "price": "Bs 50",
+    "image": "images/pedic.webp"
+  },
+  {
+    "id": "svc06",
+    "name": "Limpieza facial",
+    "description": "Limpieza profunda con extracción de impurezas y mascarilla.",
+    "price": "Bs 90",
+    "image": "images/facial.webp"
+  },
+  {
+    "id": "svc07",
+    "name": "Depilación con cera",
+    "description": "Depilación de rostro, piernas, brazos o zona íntima.",
+    "price": "Bs 60",
+    "image": "images/depil.webp"
+  },
+  {
+    "id": "svc08",
+    "name": "Maquillaje profesional",
+    "description": "Maquillaje para eventos, sesiones fotográficas o diario.",
+    "price": "Bs 100",
+    "image": "images/maqui.webp"
+  },
+  {
+    "id": "svc09",
+    "name": "Tratamiento capilar",
+    "description": "Hidratación, keratina o botox capilar para revitalizar el cabello.",
+    "price": "Bs 150",
+    "image": "images/capi.webp"
+  },
+  {
+    "id": "svc10",
+    "name": "Uñas acrílicas",
+    "description": "Aplicación de uñas acrílicas con diseño personalizado.",
+    "price": "Bs 130",
+    "image": "images/acril.webp"
+  },
+  {
+    "id": "svc11",
+    "name": "Masaje relajante",
+    "description": "Masaje corporal para aliviar el estrés y mejorar la circulación.",
+    "price": "Bs 100",
+    "image": "images/masaje.webp"
+  },
+  {
+    "id": "svc12",
+    "name": "Alisado permanente",
+    "description": "Tratamiento para alisar el cabello de forma duradera.",
+    "price": "Bs 180",
+    "image": "images/alisado.webp"
+  },
+  {
+    "id": "svc13",
+    "name": "Diseño de cejas",
+    "description": "Perfilado y diseño de cejas con hilo o cera.",
+    "price": "Bs 30",
+    "image": "images/cejas.webp"
+  },
+  {
+    "id": "svc14",
+    "name": "Extensiones de pestañas",
+    "description": "Aplicación de pestañas pelo a pelo o volumen ruso.",
+    "price": "Bs 140",
+    "image": "images/pestanas.webp"
+  },
+  {
+    "id": "svc15",
+    "name": "Peinado infantil",
+    "description": "Peinados divertidos y cómodos para niños.",
+    "price": "Bs 35",
+    "image": "images/infantil.webp"
+  }
+]

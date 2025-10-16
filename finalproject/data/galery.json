@@ -1,0 +1,64 @@
+[
+  {
+    "id": "img01",
+    "service": "Corte de cabello",
+    "image": "images/cortes.webp",
+    "caption": "Corte moderno para caballero"
+  },
+  {
+    "id": "img02",
+    "service": "Coloración",
+    "image": "images/alisado.webp",
+    "caption": "Color fantasía en cabello largo"
+  },
+  {
+    "id": "img03",
+    "service": "Peinado para eventos",
+    "image": "images/image6.webp",
+    "caption": "Peinado elegante para boda"
+  },
+  {
+    "id": "img04",
+    "service": "Maquillaje profesional",
+    "image": "images/maqui.webp",
+    "caption": "Maquillaje para sesión fotográfica"
+  },
+  {
+    "id": "img05",
+    "service": "Corte de cabello",
+    "image": "images/infantil.webp",
+    "caption": "Corte infantil con estilo"
+  },
+{
+    "id": "img06",
+    "service": "Corte de cabello",
+    "image": "images/image1.webp",
+    "caption": "Corte moderno para caballero"
+  },
+  {
+    "id": "img07",
+    "service": "Coloración",
+    "image": "images/image2.webp",
+    "caption": "Color fantasía en cabello largo"
+  },
+  {
+    "id": "img08",
+    "service": "Peinado para eventos",
+    "image": "images/image3.webp",
+    "caption": "Peinado elegante para boda"
+  },
+  {
+    "id": "img09",
+    "service": "Maquillaje profesional",
+    "image": "images/image4.webp",
+    "caption": "Maquillaje para sesión fotográfica"
+  },
+  {
+    "id": "img10",
+    "service": "Corte de cabello",
+    "image": "images/image5.webp",
+    "caption": "Corte infantil con estilo"
+  }
+
+  
+]

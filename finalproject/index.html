@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon IluminaT</title>
+  <meta name="description" content="hom page">
+  <meta name="author" content="Juan Pablo Cuiza Arce">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js" defer></script>
+  <link rel="icon" href="images/favicon.ico">
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Chamber of Commerce - La Paz" />
+  <meta property="og:description"
+    content="We connect businesses, drive economic growth, and strengthen the entrepreneurial community of La Paz." />
+  <meta property="og:image" content="https://byujupacuar.github.io/wdd231/chamber/images/favicon.ico" />
+  <meta property="og:url" content="https://byujupacuar.github.io/wdd231/chamber/directory.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_BO" />
+
+</head>
+
+<body>
+  <header>
+    <div class="title">
+      <img src="images/logo.webp" alt="Site logo" class="logo" width="1" height="1" />
+      <h1 id="titmenu">Salón IluminaT</h1>
+      <button id="menu" aria-label="Menu"></button>
+    </div>
+    <nav>
+      <ul class="navigation">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="galery.html">Gallery</a></li>
+        <li><a href="appoint.html">Appointment</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero.webp" class="hero-image" media="(min-width: 768px)">
+        <img src="images/herom.webp" alt="salon m">
+      </picture>
+      <h1 class="hero-slogan">Resalta tu belleza con un toque dorado</h1>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+      <h2>Bienvenidos a IluminaT</h2>
+      <p>En nuestro salón, cada detalle está pensado para que te sientas única. Ofrecemos una experiencia de belleza
+        personalizada, elegante y relajante, con profesionales apasionados por resaltar tu estilo.</p>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="featured-services">
+      <h2>Servicios Destacados</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="images/cortes.ico" alt="Haircut icon" />
+          <h3>Corte de Cabello</h3>
+          <p>Estilos modernos, clásicos y personalizados para cada tipo de rostro.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/makeup.ico" alt="Makeup icon" />
+          <h3>Maquillaje Profesional</h3>
+          <p>Ideal para eventos, sesiones de fotos o simplemente para brillar.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/nails.ico" alt="Nails icon" />
+          <h3>Manicure & Uñas</h3>
+          <p>Diseños elegantes, esmaltado semipermanente y cuidado completo.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/tratamiento.ico" alt="Hair treatment icon" />
+          <h3>Tratamientos Capilares</h3>
+          <p>Hidratación profunda, keratina y revitalización para tu cabello.</p>
+        </div>
+      </div>
+      <section class="cta">
+        <a href="services.html" class="cta-button">Todos Nuestros Servicios</a>
+      </section>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>Lo que dicen nuestras clientas</h2>
+      <div class="testimonial-grid">
+        <blockquote>
+          <p>“El maquillaje para mi boda fue espectacular. Me sentí como una reina.”</p>
+          <cite>- Carla M.</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Nunca había tenido un corte que me favorezca tanto. ¡Gracias IluminaT!”</p>
+          <cite>- Ana G.</cite>
+        </blockquote>
+        <blockquote>
+          <p>“El ambiente es relajante y el servicio impecable. ¡Volveré sin duda!”</p>
+          <cite>- Valeria T.</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <a href="appointment.html" class="cta-button">Reserva tu cita</a>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>123 Beauty Ave, La Paz</p>
+        <p>Email: contacto@brillodorado.com</p>
+        <p>Phone: +591 789-45612</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <a href="#">Instagram</a><br />
+        <a href="#">Facebook</a><br />
+        <a href="#">TikTok</a>
+      </div>
+      <div class="footer-column">
+        <h4>Last Updated</h4>
+        <span id="lastUpdated"></span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
